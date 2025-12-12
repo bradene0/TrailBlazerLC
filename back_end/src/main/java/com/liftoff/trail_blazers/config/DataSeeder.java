@@ -61,9 +61,27 @@ public class DataSeeder implements CommandLineRunner {
         Path basePath = Paths.get(seedBasePath).toAbsolutePath().normalize();
         log.info("Seeding database from CSV files under: {}", basePath);
 
-        int faunaInserted = seedFauna(basePath.resolve("animal_information/animals_mo_state_parks.csv"));
-        int plantsInserted = seedPlants(basePath.resolve("plant_information/plants_mo_state_parks.csv"));
-        int parksInserted = seedParks(basePath.resolve("park_locations/MO_State_Park.csv"));
+        int faunaInserted = 0;
+        int plantsInserted = 0;
+        int parksInserted = 0;
+
+        try {
+            faunaInserted = seedFauna(basePath.resolve("animal_information/animals_mo_state_parks.csv"));
+        } catch (Exception e) {
+            log.error("Failed to seed fauna; continuing startup.", e);
+        }
+
+        try {
+            plantsInserted = seedPlants(basePath.resolve("plant_information/plants_mo_state_parks.csv"));
+        } catch (Exception e) {
+            log.error("Failed to seed plants; continuing startup.", e);
+        }
+
+        try {
+            parksInserted = seedParks(basePath.resolve("park_locations/MO_State_Park.csv"));
+        } catch (Exception e) {
+            log.error("Failed to seed parks; continuing startup.", e);
+        }
 
         log.info("Seeded data - fauna: {}, plants: {}, parks: {}", faunaInserted, plantsInserted, parksInserted);
     }
