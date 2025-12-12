@@ -11,6 +11,7 @@ public class Plants extends AbstractEntity {
 
     private String scientificName;
     private String commonName;
+    @Column(length = 2048)
     private String currentDistribution;
     private String family;
     private String federalListingStatus;
