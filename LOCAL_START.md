@@ -63,7 +63,3 @@ When you exit the script, the backend process is stopped automatically.
 ## Notes
 - The frontend still expects any Auth0 configuration it uses to be present in your environment (e.g., `REACT_APP_AUTH0_DOMAIN`, `REACT_APP_AUTH0_CLIENT_ID`). Add these before running if needed.
 - If you do want MySQL, keep it running before launching the script; otherwise the backend will start with the built-in H2 database so you can demo without extra setup.
-- CSV imports run once by default; set `DATA_SEED_REFRESH=true` if you want a clean reload on each start, or `DATA_SEED_ENABLED=false` to opt out entirely.
-## Notes
-- The frontend still expects any Auth0 configuration it uses to be present in your environment (e.g., `REACT_APP_AUTH0_DOMAIN`, `REACT_APP_AUTH0_CLIENT_ID`). Add these before running if needed.
-- If you do want MySQL, keep it running before launching the script; otherwise the backend will start with the built-in H2 database so you can demo without extra setup.
