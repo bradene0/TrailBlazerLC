@@ -23,6 +23,9 @@ The backend accepts overrides for the database via environment variables so you 
   - `DATA_SEED_ENABLED` (defaults to `true`; set to `false` to skip importing on startup)
   - `DATA_SEED_REFRESH` (defaults to `false`; set to `true` to wipe/reload data on each boot)
   - `DATA_SEED_BASE_PATH` (defaults to `../databases` when running from `back_end/`)
+- `SPRING_JPA_SHOW_SQL` (defaults to `true`)
+- `SPRING_JPA_DDL_AUTO` (defaults to `update`)
+- `SPRING_JPA_DIALECT` (defaults to `org.hibernate.dialect.MySQL8Dialect`)
 
 To target MySQL instead of the in-memory database, supply your JDBC settings, for example:
 ```bash
@@ -61,3 +64,6 @@ When you exit the script, the backend process is stopped automatically.
 - The frontend still expects any Auth0 configuration it uses to be present in your environment (e.g., `REACT_APP_AUTH0_DOMAIN`, `REACT_APP_AUTH0_CLIENT_ID`). Add these before running if needed.
 - If you do want MySQL, keep it running before launching the script; otherwise the backend will start with the built-in H2 database so you can demo without extra setup.
 - CSV imports run once by default; set `DATA_SEED_REFRESH=true` if you want a clean reload on each start, or `DATA_SEED_ENABLED=false` to opt out entirely.
+## Notes
+- The frontend still expects any Auth0 configuration it uses to be present in your environment (e.g., `REACT_APP_AUTH0_DOMAIN`, `REACT_APP_AUTH0_CLIENT_ID`). Add these before running if needed.
+- If you do want MySQL, keep it running before launching the script; otherwise the backend will start with the built-in H2 database so you can demo without extra setup.
