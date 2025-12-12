@@ -1,0 +1,20 @@
+Class,Package,File,Role
+TripsFPDTO,com.liftoff.trail_blazers.model.dto,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/model/dto/TripsFPDTO.java,DTO
+Fauna,com.liftoff.trail_blazers.model,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/model/Fauna.java,JPA Entity
+Geolocations,com.liftoff.trail_blazers.model,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/model/Geolocations.java,JPA Entity
+Plants,com.liftoff.trail_blazers.model,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/model/Plants.java,JPA Entity
+Trips,com.liftoff.trail_blazers.model,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/model/Trips.java,JPA Entity
+FaunaListController,com.liftoff.trail_blazers.controllers,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/controllers/FaunaListController.java,REST Controller
+GeolocationsController,com.liftoff.trail_blazers.controllers,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/controllers/GeolocationsController.java,REST Controller
+HomeController,com.liftoff.trail_blazers.controllers,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/controllers/HomeController.java,REST Controller
+PlantsController,com.liftoff.trail_blazers.controllers,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/controllers/PlantsController.java,REST Controller
+TripsController,com.liftoff.trail_blazers.controllers,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/controllers/TripsController.java,REST Controller
+TrailBlazersApplication,com.liftoff.trail_blazers,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/TrailBlazersApplication.java,Spring Boot App
+FaunaRepository,com.liftoff.trail_blazers.data,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/data/FaunaRepository.java,Spring Data Repository
+GeolocationsRepository,com.liftoff.trail_blazers.data,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/data/GeolocationsRepository.java,Spring Data Repository
+PlantsRepository,com.liftoff.trail_blazers.data,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/data/PlantsRepository.java,Spring Data Repository
+TripsFPRepository,com.liftoff.trail_blazers.data,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/data/TripsFPRepository.java,Spring Data Repository
+TripsRepository,com.liftoff.trail_blazers.data,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/data/TripsRepository.java,Spring Data Repository
+DataSeeder,com.liftoff.trail_blazers.config,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/config/DataSeeder.java,Startup Seeder
+WeatherController,com.liftoff.trail_blazers.controllers,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/controllers/WeatherController.java,Utility/Other
+AbstractEntity,com.liftoff.trail_blazers.model,/mnt/data/TrailBlazerLC-main/TrailBlazerLC-main/back_end/src/main/java/com/liftoff/trail_blazers/model/AbstractEntity.java,Utility/Other
